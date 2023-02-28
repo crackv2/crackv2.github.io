@@ -8,9 +8,14 @@
     src: url(/fonts/Missing.ttf);
 }
 
+@font-face {
+    font-family: 'venneta';
+    src: url(/fonts/Venneta.ttf);
+}
+
 body {
-    background: rgb(86, 106, 86);
-    background: linear-gradient(180deg, rgba(86, 106, 86, 1) 10%, rgba(113, 148, 113, 1) 44%, rgba(52, 64, 52, 1) 82%);
+    background: rgb(52,64,52);
+    background: linear-gradient(0deg, rgba(52,64,52,1) 10%, rgba(113,148,113,1) 44%, rgba(52,64,52,1) 82%);
 }
 
 #title {
@@ -19,7 +24,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-family: 'antares', sans-serif;
+    font-family: 'venneta', sans-serif;
     font-size: 75px;
     color: #0f0e0c;
 }
@@ -34,16 +39,12 @@ body {
     font-size: 25px;
 }
 
-
-
-
 section {
     height: 100vh;
     padding: 50px;
     border: 2px;
     border-color: rgb(255, 0, 0);
     border-style: solid;
-
 }
 
 .about-container {
@@ -56,7 +57,6 @@ section {
     position: relative;
     font-family: 'missing', sans-serif;
     font-size: 24px;
-
 }
 
 .contact-container {
@@ -70,10 +70,10 @@ section {
     top: 30%;
     font-size: 150px;
     color: #a1875d;
+    font-family: Arial, Helvetica, sans-serif;
     filter: blur(5px);
     z-index: -1;
     animation: move-back-and-forth 20s infinite;
-
 }
 
 @-webkit-keyframes move-back-and-forth {
@@ -104,4 +104,5 @@ footer {
     width: 100%;
     height: 25px;
     text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
