@@ -1,17 +1,96 @@
-body{
-    margin: 0;
-    padding: 0;
+@font-face {
+    font-family: 'antares';
+    src: url(/fonts/antares.ttf);
+}
+
+@font-face {
+    font-family: 'missing';
+    src: url(/fonts/Missing.ttf);
+}
+
+body {
+    background: rgb(86,106,86);
+    background: linear-gradient(180deg, rgba(86,106,86,1) 10%, rgba(113,148,113,1) 44%, rgba(52,64,52,1) 82%);
+}
+
+section {
+    height: 100vh;
+    padding: 50px;
+    border: 2px;
+    border-color: rgb(255, 0, 0);
+    border-style: solid;
+
+}
+
+.about-container {
+    position: relative;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+}
+
+.projects-container{
+    position: relative;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+
+}
+.backtext{
+    position: absolute;
+    top: 30%;
+    font-size: 150px;
+    color: #a1875d;
+    filter: blur(5px);
+    z-index: -1;
+    animation: move-back-and-forth 20s infinite;
+
+}
+
+@-webkit-keyframes move-back-and-forth {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    25% {
+        -webkit-transform: translateX(20px);
+        transform: translateX(20px);
+    }
+
+    75% {
+        -webkit-transform: translateX(-40px);
+        transform: translateX(-40px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
 }
 
 #title {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate( -50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
+    font-family: 'antares', sans-serif;
+    font-size: 75px;
+    color: #0f0e0c;
 }
 
-footer{
+#message {
+    position: absolute;
+    top: calc(50% + 150px);
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: 'missing';
+    font-size: 25px;
+}
+
+
+
+footer {
     position: fixed;
     bottom: 0;
     width: 100%;
