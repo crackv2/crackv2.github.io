@@ -9,9 +9,33 @@
 }
 
 body {
-    background: rgb(86,106,86);
-    background: linear-gradient(180deg, rgba(86,106,86,1) 10%, rgba(113,148,113,1) 44%, rgba(52,64,52,1) 82%);
+    background: rgb(86, 106, 86);
+    background: linear-gradient(180deg, rgba(86, 106, 86, 1) 10%, rgba(113, 148, 113, 1) 44%, rgba(52, 64, 52, 1) 82%);
 }
+
+#title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'antares', sans-serif;
+    font-size: 75px;
+    color: #0f0e0c;
+}
+
+#message {
+    position: absolute;
+    top: calc(50% + 150px);
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: 'missing';
+    font-size: 25px;
+}
+
+
+
 
 section {
     height: 100vh;
@@ -24,17 +48,24 @@ section {
 
 .about-container {
     position: relative;
-    font-family: Arial, sans-serif;
+    font-family: 'missing', sans-serif;
     font-size: 24px;
 }
 
-.projects-container{
+.projects-container {
     position: relative;
-    font-family: Arial, sans-serif;
+    font-family: 'missing', sans-serif;
     font-size: 24px;
 
 }
-.backtext{
+
+.contact-container {
+    position: relative;
+    font-family: 'missing', sans-serif;
+    font-size: 24px;
+}
+
+.backtext {
     position: absolute;
     top: 30%;
     font-size: 150px;
@@ -66,29 +97,6 @@ section {
         transform: translateX(0);
     }
 }
-
-#title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-family: 'antares', sans-serif;
-    font-size: 75px;
-    color: #0f0e0c;
-}
-
-#message {
-    position: absolute;
-    top: calc(50% + 150px);
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    font-family: 'missing';
-    font-size: 25px;
-}
-
-
 
 footer {
     position: fixed;
