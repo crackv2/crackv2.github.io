@@ -18,8 +18,8 @@ html{
 }
 
 body {
-    background: rgb(52,64,52);
-    background: linear-gradient(0deg, rgba(52,64,52,1) 10%, rgba(113,148,113,1) 44%, rgba(52,64,52,1) 82%);
+    background: rgb(142,179,142);
+background: linear-gradient(0deg, rgba(142,179,142,1) 0%, rgba(113,148,113,1) 44%, rgba(140,175,140,1) 100%);
 }
 
 #title {
@@ -30,7 +30,7 @@ body {
     text-align: center;
     font-family: 'venneta', sans-serif;
     font-size: 75px;
-    color: whitesmoke;
+    color: #20262E;
 }
 
 #message {
@@ -40,7 +40,7 @@ body {
     transform: translateX(-50%);
     text-align: center;
     font-family: 'missing';
-    color: whitesmoke;
+    color: #20262E;
     font-size: 25px;
 }
 
@@ -80,17 +80,10 @@ section {
     z-index: -1;
     opacity: 0;
     transform: translateX(-100%);
-    transition: all 1s;
+    transition: all 2s;
 }
 
 .show {
-    position: absolute;
-    top: 30%;
-    font-size: 150px;
-    color: #a1875d;
-    font-family: Arial, Helvetica, sans-serif;
-    filter: blur(5px);
-    z-index: -1;
     opacity: 1;
     transform: translateX(0);
 }
@@ -103,3 +96,71 @@ footer {
     text-align: center;
     font-family: Arial, sans-serif
 }
+
+
+
+.aboutcard {
+    width: 75%;
+    height: 75%;
+    border-radius: 4px;
+    display: flex;
+    gap: 5px;
+    filter: opacity(45%);
+    margin: 0 auto;
+    justify-content: center;
+}
+  
+.aboutcard p {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.8s;
+    border: 2px solid #ffffff;
+    background: #AA5656;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    position: relative;
+}
+.aboutcard p:hover {
+    flex: 4;
+}
+  
+.aboutcard p span {
+    min-width: 14em;
+    padding: .5em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    color: #000000;
+    letter-spacing: .1em;
+}
+  
+.aboutcard p:hover span {
+    transform: rotate(0);
+    transform: scale(3);
+    transform: translateY(-490%);
+}
+
+.information {
+    position: absolute;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.aboutcard p:hover .information {
+    animation: fade-in-out 2.5s;
+    display: block;
+}
+
+@keyframes fade-in-out {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
