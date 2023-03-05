@@ -84,8 +84,7 @@ section {
     opacity: 0;
     transform: translateX(-100%);
     transition: all 2s;
-    font-stretch: expanded;
-    user-select: none;
+    text-shadow:  9px -9px 18px #3f593f;
 }
 
 .show {
@@ -116,11 +115,15 @@ footer {
     display: flex;
     flex: 1;
     flex-direction: column;
-    border: 2px solid #ccc;
-    margin: 10px;
+    border: 2px solid #AA5656;
+    border-radius: 3px;
+    border-image: linear-gradient(to bottom, #a36363, #698269) 1;
+    margin: 2px;
     transition: all 0.8s;
-    background-color: rgba(170, 86, 86, 0.3);
     align-items: center;
+    background: linear-gradient(45deg, rgba(153, 77, 77, 0.6), rgba(182, 92, 92, 0.1));
+    box-shadow:  12px -2px 26px #3f593f;
+
   }
 
   .card:hover {
@@ -143,7 +146,6 @@ footer {
     transform-origin: center top;
   }
   
-
   .card p {
     margin: 0; 
     text-align: center; 
