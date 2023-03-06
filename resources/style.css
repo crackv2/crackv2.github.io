@@ -22,6 +22,93 @@ body {
     background: linear-gradient(0deg, rgba(142,179,142,1) 0%, rgba(113,148,113,1) 44%, rgba(140,175,140,1) 100%);
 }
 
+header{
+    height: 60px;
+}
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .checkmark {
+    position: relative;
+    top: 10px;
+    height: 1.3em;
+    width: 1.3em;
+  }
+  
+  .checkmark span {
+    width: 35px;
+    height: 3px;
+    background-color: #20262E;
+    position: absolute;
+    display: inline-block;
+    transition: all 1s ease-in-out;
+  }
+  
+  .checkmark span:nth-child(1) {
+    top: 10%;
+    transform: translateY(-50%);
+  }
+  
+  .checkmark span:nth-child(2) {
+    top: 50%;
+    transform: translateY(50%);
+  }
+  
+  .checkmark span:nth-child(3) {
+    top: 90%;
+    transform: translateY(50%);
+  }
+  
+  .container input:checked + .checkmark span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) translateX(-50px) rotate(45deg);
+  }
+  
+  .container input:checked + .checkmark span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%) translateX(-50px) rotate(-45deg);
+  }
+  
+  .container input:checked + .checkmark span:nth-child(3) {
+    transform:translateX(-50px) ;
+    opacity: 0;
+  }
+
+  input[type="checkbox"]:checked + .checkmark + .options {
+    display: flex;
+    flex-direction: row;
+    animation: slide-in-left 1s ease-in-out 0.4s forwards;
+  }
+
+  .options {
+    position: absolute;
+    left:10px;
+    top: 1px;
+    opacity: 0;
+  }
+
+  .options p{
+    font-size: large;
+    margin-right: 20px;
+    color: #20262E;
+  }
+  
+
+  
 #title {
     position: absolute;
     top: 50%;
@@ -164,3 +251,14 @@ footer {
     0%{opacity: 0;}
     100%{opacity: 1;}
 }
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-15px);
+        opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
