@@ -250,8 +250,6 @@ footer {
   transition: all 0.8s;
   align-items: center;
   background: linear-gradient(45deg, #142d31);
- 
-
 }
 
 .card:hover {
@@ -289,6 +287,75 @@ footer {
 .card:hover p {
   animation: fade-in 2.5s 0.4s forwards;
   display: block;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact{
+  width: 55%;
+  height: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.contactCard {
+  width: 40%;
+  height: 50px;
+  margin: 15px;
+  border: 1px solid #BDBDD7;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  font-family: 'variera';
+  font-size: larger;
+}
+
+.contactCard a {
+  display: flex;
+  align-items: center;
+  color: #BDBDD7;
+}
+
+.contactCard a img {
+  margin-right: 10px;
+  margin-left: 10px;
+  height: 25px;
+}
+
+.contactCard:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+#linkedIn:hover{
+  background-color: #0288D1;
+}
+#gmail:hover{
+  background-color: #EA4335;
+}
+#dc:hover{
+  background-color:	#7289da;
+}
+
+#fb:hover{
+  background-color: #1778F2;
+}
+
+.contactCard:active {
+  transform: scale(0.95) rotateZ(1.7deg);
 }
 
 @keyframes fade-in {
