@@ -134,7 +134,7 @@ input[type="checkbox"]:checked+.checkmark+.options {
 
 #myBtn:hover {
   border-radius: 40px;
-  background-color: rgba(63, 89, 63, 0.5);
+  background-color: rgba(33, 57, 99, 0.2);
   transition: ease-in 0.3s;
   transform: rotate(-90deg) scale(1.5);
 }
@@ -183,7 +183,9 @@ section {
 
 .projects-container {
   position: relative;
-  font-family: 'missing', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 24px;
 }
 
