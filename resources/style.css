@@ -116,6 +116,11 @@ input[type="checkbox"]:checked+.checkmark+.options {
   font-size: 20px;
 }
 
+.options p:hover{
+  transition: ease-in 0.3s;
+  transform: scale(1.1);
+}
+
 #myBtn {
   display: none;
   position: fixed;
