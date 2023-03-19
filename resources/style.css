@@ -33,6 +33,7 @@ header {
 .container input {
   justify-content: center;
   opacity: 0;
+  user-select: none;
   cursor: pointer;
 }
 
@@ -43,15 +44,15 @@ header {
   top: 25%;
   left: 50%;
   user-select: none;
-  width: 25px;
-  cursor: pointer;
+  width: 1em;
 }
 
 .checkmark span {
-  width: 30px;
-  height: 3px;
+  width: 2em;
+  height: 0.2em;
   background-color: #BDBDD7;
   position: absolute;
+  cursor: pointer;
   left: 0;
   transition: all 1s ease-in-out;
 }
@@ -97,13 +98,13 @@ input[type="checkbox"]:checked+.checkmark+.options {
   position: absolute;
   top: -13px;
   left: 0px;
-  width: 350px;
+  width: 10em;
   display: none;
   opacity: 0;
 }
 
 .options p {
-  margin-left: 20px;
+  margin-left: 1.25em;
   display: inline;
 }
 
@@ -132,13 +133,13 @@ input[type="checkbox"]:checked+.checkmark+.options {
   color: #BDBDD7;
   cursor: pointer;
   padding: 2px 7px;
-  font-size: 25px;
+  font-size: 1.5em;
   transform: rotate(-90deg);
   background: none;
 }
 
 #myBtn:hover {
-  border-radius: 40px;
+  border-radius: 2.5em;
   background-color: rgba(0, 0, 0, 0.7);
   transition: ease-in 0.3s;
   transform: rotate(-90deg) scale(1.5);
@@ -176,7 +177,6 @@ input[type="checkbox"]:checked+.checkmark+.options {
 
 section {
   height: 100vh;
-  padding: 50px;
 }
 
 .about-container {
@@ -192,13 +192,13 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 1.5em;
 }
 
 .backtext {
   position: absolute;
   top: 30%;
-  font-size: 250px;
+  font-size: 15em;
   color: #BDBDD7;
   font-family: 'variera';
   filter: blur(5px);
@@ -207,6 +207,8 @@ section {
   transform: translateX(-100%);
   transition: all 2s;
   text-shadow: 4px -4px 6px #20180b;
+  padding: 0.1em;
+  user-select: none;
 }
 
 .show {
@@ -217,61 +219,69 @@ section {
 .mainMe {
   box-shadow: rgba(0, 0, 0, 0.4) 10px 20px 30px, rgba(0, 0, 0, 0.3) 10px 1px 53px 3px, rgba(1, 0, 0, 0.2) 0px -1px 3px inset;
   text-align: center;
-  height: 600px;
-  width: 500px;
+  height: 50%;
+  width: 30%;
   transition: all 0.5s;
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+  padding: 10px;
+  font-size: 1em;
 }
 
 .smallMe {
-  width: 210px;
-  height: 235px;
   box-shadow: rgba(0, 0, 0, 0.4) 10px 20px 30px, rgba(0, 0, 0, 0.3) 10px 1px 53px 3px, rgba(1, 0, 0, 0.2) 0px -1px 3px inset;
   text-align: center;
-  height: 250px;
-  width: 300px;
+  height: 25%;
+  width: 15%;
   transition: all 0.5s;
   position: absolute;
-  left: 15%;
+  left: 10%;
   top: 5%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   user-select: none;
-  font-weight: bolder;
   border-radius: 10px;
+  padding: 10px;
+  font-size: 1.vw;
 }
 
 .smallMe2 {
-  width: 210px;
-  height: 235px;
   box-shadow: rgba(0, 0, 0, 0.4) 10px 20px 30px, rgba(0, 0, 0, 0.3) 10px 1px 53px 3px, rgba(1, 0, 0, 0.2) 0px -1px 3px inset;
   text-align: center;
-  height: 250px;
-  width: 300px;
+  height: 30%;
+  width: 22%;
   transition: all 0.5s;
   position: absolute;
-  right: 11%;
+  right: 5%;
   bottom: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+  font-size: 1em;
 }
 
 .cardText {
-  width: 440px;
   transition: ease-in-out 0.2s;
   color: whitesmoke;
   text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+  user-select: none;
 }
 
 .cardText h1 {
   font-family: variera;
+  font-size: 2vw;
+}
+
+.cardText p {
+  font-size: 1.5vw;
 }
 
 .cardText a {
@@ -309,8 +319,8 @@ section {
 
 footer {
   position: absolute;
-  width: 98.5%;
-  height: 25px;
+  width: 99%;
+  height: 2em;
   text-align: center;
   color: whitesmoke;
   font-family: Arial, sans-serif
@@ -320,8 +330,8 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 75%;
-  height: 75%;
+  width: 75vw;
+  height: 40vw;
 }
 
 .card {
@@ -333,7 +343,7 @@ footer {
   border: 2px solid;
   border-radius: 3px;
   border-image: linear-gradient(to bottom, #2c2d3b, #BDBDD7) 1;
-  margin: 2px;
+  margin: 0.1em;
   transition: all 0.8s;
   align-items: center;
 }
@@ -345,8 +355,8 @@ footer {
 
 .card h2 {
   font-family: variera;
-  font-size: 50px;
-  letter-spacing: 15px;
+  font-size: 3vw;
+  letter-spacing: 0.2em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -374,7 +384,7 @@ footer {
   justify-content: center;
   margin: 0px 5px;
   display: flex;
-  height: 35px;
+  height: 2.5vw;
   color: whitesmoke;
   transform: translate(-50%, -50%);
   opacity: 0;
@@ -384,63 +394,10 @@ footer {
   animation: fade-in 2.5s 0.4s forwards;
 }
 
-.card p {
-  color: whitesmoke;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-}
-
-.card:hover p {
-  animation: fade-in 2.5s 0.6s forwards;
-}
-
-.links {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  bottom: 5%;
-  opacity: 0;
-}
-
-.linksBtn {
-  justify-content: center;
-  margin: 0px 15px;
-  background-color: transparent;
-  border: 1px solid #BDBDD7;
-  border-radius: 5px;
-  text-align: center;
-  cursor: pointer;
-  font-family: 'variera';
-  font-size: xx-large;
-  color: whitesmoke;
-  transition: all 0.5s;
-  height: 50px;
-  width: 200px;
-}
-
-
-.card:hover .links {
-  animation: fade-in 2.5s 0.4s forwards;
-}
-
-.linksBtn:hover {
-  transform: scale(1.05);
-  background-color: #20262E;
-}
-
-.linksBtn:active {
-  transform: scale(0.95) rotateZ(1.7deg);
-}
-
-
 .contactCard {
-  width: 120px;
-  height: 40px;
-  margin: 15px 10px;
+  width: 7vw;
+  height: 2.5vw;
+  margin: 1vw 1vw;
   border: 1px solid #BDBDD7;
   border-radius: 5px;
   text-align: center;
@@ -451,19 +408,20 @@ footer {
   justify-content: center;
   background-color: transparent;
   font-family: 'variera';
-  font-size: 25px;
+  font-size: 1.3vw;
 }
 
 .contactCard a {
   display: flex;
   align-items: center;
   color: whitesmoke;
+  font-size: 1.3vw;
 }
 
 .contactCard a img {
-  margin-right: 10px;
-  margin-left: 10px;
-  height: 35px;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 2vw;
 }
 
 .contactCard:hover {
@@ -487,6 +445,58 @@ footer {
 }
 
 .contactCard:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.card p {
+  color: whitesmoke;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  font-size: 1.5vw;
+}
+
+.card:hover p {
+  animation: fade-in 2.5s 0.6s forwards;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 5%;
+  opacity: 0;
+}
+
+.linksBtn {
+  justify-content: center;
+  margin: 0px 15px;
+  background-color: transparent;
+  border: 1px solid #BDBDD7;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'variera';
+  font-size: 2vw;
+  color: whitesmoke;
+  transition: all 0.5s;
+  height: 3vw;
+  width: 15vw;
+}
+
+.card:hover .links {
+  animation: fade-in 2.5s 0.4s forwards;
+}
+
+.linksBtn:hover {
+  transform: scale(1.05);
+  background-color: #20262E;
+}
+
+.linksBtn:active {
   transform: scale(0.95) rotateZ(1.7deg);
 }
 
