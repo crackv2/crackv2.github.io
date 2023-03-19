@@ -177,9 +177,6 @@ input[type="checkbox"]:checked+.checkmark+.options {
 section {
   height: 100vh;
   padding: 50px;
-  border: 2px;
-  border-color: rgb(255, 0, 0);
-  border-style: solid;
 }
 
 .about-container {
