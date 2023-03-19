@@ -157,6 +157,8 @@ input[type="checkbox"]:checked+.checkmark+.options {
   font-family: 'venneta', sans-serif;
   font-size: 85px;
   color: #BDBDD7;
+  text-shadow: 10px -2px 2px #1f1e1e;
+  user-select: none;
 }
 
 #message {
@@ -168,6 +170,8 @@ input[type="checkbox"]:checked+.checkmark+.options {
   font-family: 'missing';
   color: #BDBDD7;
   font-size: 40px;
+  text-shadow: 5px -2px 2px #1f1e1e;
+  user-select: none;
 }
 
 section {
