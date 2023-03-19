@@ -17,16 +17,16 @@
             <label class="container">
                 <input type="checkbox">
                 <div class="checkmark">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
                 <div class="options">
                     <p><a href="#about-container">About me</a></p>
                     <p><a href="#projects-container">Projects</a></p>
                     <p><a href="#contact-container">Contact</a></p>
-                  </div>
-              </label>
+                </div>
+            </label>
         </header>
         <button onclick="topFunction()" id="myBtn" title="Go to top">&#8680;</button>
         <section class="welcome-container">
@@ -37,7 +37,47 @@
             <div class="backtext">
                 ABOUT ME
             </div>
-            
+            <div class="mainMe">
+                <div class="cardText">
+                    <h1>Journey so far</h1>
+                    <p>Started self-learning coding and web development online in March 2022. In November of the same year, I joined the <a href="https://kood.tech/" target="_blank">kood/Jõhvi</a> coding school to further enhance my skills and knowledge in the field. Although so far my primary interest has been in front-end development, I have also gained a lot of experience in writing back-end code. You can check some of my projects below. Feel free to visit my <a href="https:linkedin.com/in/robert-kais-944881244/" target="_blank">LinkedIn</a> page for in-depth information about my education, certificates, and work experience.
+                    </p>
+                </div>
+            </div>
+            <div class="smallMe">
+                <div class="cardText">
+                    <h1>Hello there!</h1>
+                    <p>I'm Robert.<br>I'm a software development studnet from Estonia</p>
+                </div>
+            </div>
+            <div class="smallMe2">
+                <div class="cardText">
+                    <h1>Hit me up!</h1>
+                    <div class="contactBtns">
+                        <div class="topBtns">
+                            <button class="contactCard" id="linkedIn"
+                                onclick="window.open('https:linkedin.com/in/robert-kais-944881244/', '_blank')">
+                                <a>LinkedIn<img src="resources/logos/icons8-linkedin-50.png" name="linkedIn-logo"></a>
+                            </button>
+                            <button class="contactCard" id="gmail" onclick="location.href='mailto:robertkais@gmail.com'">
+                                <a>Gmail<img src="resources/logos/icons8-gmail-logo-50.png" name="gmail-logo"></a>
+                            </button>
+                        </div>
+                        <div class="botBtns">
+                            <button class="contactCard" id="dc"
+                                onclick="window.open('https:discordapp.com/users/406104598055616522/', '_blank')">
+                                <a>Discord<img src="resources/logos/icons8-discord-50.png"
+                                        name="discord-logo"></a>
+                            </button>
+                            <button class="contactCard" id="fb"
+                                onclick="window.open('https:www.facebook.com/robert.kais', '_blank')">
+                                <a>Facebook<img src="resources/logos/icons8-facebook-50.png" name="fb-logo"></a>
+                            </button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
         <section class="projects-container" id="projects-container">
             <div class="backtext">
@@ -51,13 +91,17 @@
                         <img src="resources/logos/icons8-html-50.png" title="HTML5">
                         <img src="resources/logos/icons8-css-50.png" title="CSS3">
                     </div>
-                    <p>Ascii-art-web is a server-based program that allows users to create ASCII art banners using a web-based graphical user interface. The program implements HTTP endpoints for sending data to the Go server and displaying the results on the main page. The program also ensures appropriate HTTP status codes are returned for each request.</p>
+                    <p>Ascii-art-web is a server-based program that allows users to create ASCII art banners using a
+                        web-based graphical user interface. The program implements HTTP endpoints for sending data to
+                        the Go server and displaying the results on the main page.</p>
                     <div class="links">
-                        <button class="linksBtn" id="ascii-art-web" onclick="window.open('https:www.facebook.com/robert.kais', '_blank')">
+                        <button class="linksBtn" id="ascii-art-web"
+                            onclick="window.open('https:www.facebook.com/robert.kais', '_blank')">
                             <a>View project</a>
-                        <button class="linksBtn" id="ascii-art-web" onclick="window.open('https://01.kood.tech/git/root/public/src/branch/master/subjects/ascii-art-web', '_blank')">
-                            <a>Porject instructions</a>
-                        </button>
+                            <button class="linksBtn" id="ascii-art-web"
+                                onclick="window.open('https://01.kood.tech/git/root/public/src/branch/master/subjects/ascii-art-web', '_blank')">
+                                <a>Porject instructions</a>
+                            </button>
                     </div>
                 </div>
                 <div class="card">
@@ -67,13 +111,18 @@
                         <img src="resources/logos/icons8-html-50.png" title="HTML5">
                         <img src="resources/logos/icons8-css-50.png" title="CSS3">
                     </div>
-                    <p>Groupie Tracker is a web-based program that receives data from a given API and displays information about bands and artists, including their name(s), image, the year they started, their first album, and members. The program creates a user-friendly website with data visualizations and allows for client-server communication for requesting information.</p>
+                    <p>Groupie-tracker is a web-based program that receives data from a given API and displays
+                        information about bands and artists, including their name(s), image, the year they started,
+                        their first album, and members. The program creates a user-friendly website with data
+                        visualizations and allows for client-server communication for requesting information.</p>
                     <div class="links">
-                        <button class="linksBtn" id="groupie-tracker" onclick="window.open('https:www.facebook.com/robert.kais', '_blank')">
+                        <button class="linksBtn" id="groupie-tracker"
+                            onclick="window.open('https:www.facebook.com/robert.kais', '_blank')">
                             <a>View project</a>
-                        <button class="linksBtn" id="groupie-tracker" onclick="window.open('https://01.kood.tech/git/root/public/src/branch/master/subjects/groupie-tracker', '_blank')">
-                            <a>Porject instructions</a>
-                        </button>
+                            <button class="linksBtn" id="groupie-tracker"
+                                onclick="window.open('https://01.kood.tech/git/root/public/src/branch/master/subjects/groupie-tracker', '_blank')">
+                                <a>Porject instructions</a>
+                            </button>
                     </div>
                 </div>
                 <div class="card">
@@ -84,38 +133,25 @@
                         <img src="resources/logos/icons8-css-50.png" title="CSS3">
                         <img src="resources/logos/icons8-sql-50.png" title="SQL">
                     </div>
-                    <p>This project is a web forum that allows users to communicate with each other by creating posts and comments. The forum has categories associated with posts, and users can like or dislike posts and comments. There is also a filtering mechanism that allows users to filter posts by categories, created posts, and liked posts. The database library SQLite is used for data storage, and Docker is used for containerization.</p>
+                    <p>Forum is a project that allows users to communicate with each other by creating posts
+                        and comments. The forum has categories associated with posts, and users can like or dislike
+                        posts and comments. There is also a filtering mechanism that allows users to filter posts by
+                        categories, created posts, and liked posts. The database library SQLite is used for data
+                        storage, and Docker is used for containerization.</p>
                     <div class="links">
                         <button class="linksBtn" id="forum">
                             <a class="soon">In progress...</a>
-                        <button class="linksBtn" id="forum" onclick="window.open('https://01.kood.tech/git/root/public/src/branch/master/subjects/forum', '_blank')">
-                            <a>Porject instructions</a>
-                        </button>
+                            <button class="linksBtn" id="forum"
+                                onclick="window.open('https://01.kood.tech/git/root/public/src/branch/master/subjects/forum', '_blank')">
+                                <a>Porject instructions</a>
+                            </button>
                     </div>
                 </div>
                 <div class="card">
                     <h2>Future projects</h2>
-                    <p>JavaScript sprint 10.04.23 - 07.05.23<br>New projects implementing Js will be coming soon after that...</p>
+                    <p>JavaScript sprint<br>10.04.23 - 07.05.23<br>New projects implementing Js will be coming soon
+                        after that...</p>
                 </div>
-            </div>
-        </section>
-        <section class="contact-container" id="contact-container">
-            <div class="backtext">
-                CONTACT
-            </div>
-            <div class="contact">
-                <button class="contactCard" id="linkedIn" onclick="window.open('https:linkedin.com/in/robert-kais-944881244/', '_blank')">
-                    <a>LinkedIn<img src="https://img.icons8.com/ios/256/linkedin.png" name="linkedIn-logo"></a>
-                </button>
-                <button class="contactCard" id="gmail" onclick="location.href='mailto:robertkais@gmail.com'">
-                    <a >Gmail<img src="https://img.icons8.com/ios-filled/256/gmail.png" name="gmail-logo"></a>
-                </button>
-                <button class="contactCard" id="dc" onclick="window.open('https:discordapp.com/users/406104598055616522/', '_blank')">
-                    <a>Discord<img src="https://img.icons8.com/ios/256/discord-logo.png" name="discord-logo"></a>
-                </button>
-                <button class="contactCard" id="fb" onclick="window.open('https:www.facebook.com/robert.kais', '_blank')">
-                    <a>Facebook<img src="https://img.icons8.com/ios/256/facebook--v1.png" name="fb-logo"></a>
-                </button>
             </div>
         </section>
     </main>
