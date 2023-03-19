@@ -139,7 +139,7 @@ input[type="checkbox"]:checked+.checkmark+.options {
 
 #myBtn:hover {
   border-radius: 40px;
-  background-color: rgba(33, 57, 99, 0.2);
+  background-color: rgba(0, 0, 0, 0.7);
   transition: ease-in 0.3s;
   transform: rotate(-90deg) scale(1.5);
 }
@@ -403,17 +403,17 @@ footer {
 }
 
 #linkedIn:hover{
-  background-color: #0288D1;
+  background-color: rgba(2, 136, 209, 0.7);
 }
 #gmail:hover{
-  background-color: #EA4335;
+  background-color: rgba(234, 67, 53, 0.7);
 }
 #dc:hover{
-  background-color:	#7289da;
+  background-color:	rgba(114, 137, 218, 0.7);
 }
 
 #fb:hover{
-  background-color: #1778F2;
+  background-color: rgba(23, 120, 242, 0.7);
 }
 
 .contactCard:active {
