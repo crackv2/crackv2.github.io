@@ -663,7 +663,7 @@ footer {
 
   .card h2 {
     user-select: none;
-    font-size: 35px;
+    font-size: 30px;
     overflow: hidden;
   }
 
@@ -676,6 +676,12 @@ footer {
     font-size: 1em;
   }
 
+  .card:hover {
+    transform: none;
+  }
+  .card:hover h2{
+    transform: none;
+  }
   .card:active h2 {
     top: 0;
     transform: translateX(-50%) rotate(0deg) scale(0.7);
