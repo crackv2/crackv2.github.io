@@ -638,20 +638,38 @@ footer {
     pointer-events: none;
   }
 
+  .card {
+    overflow: hidden;
+    height: 100%
+  }
+
   .card p {
-    font-size: 1.2vw;
+    font-size: 15px;
+    width: 90%;
+    height: 50%;
+    line-height: 100%;
+    text-align: center;
   }
 
   .languages img {
-    height: 2vw;
+    height: 15px;
+    overflow: hidden;
   }
 
   .card h2 {
-    font-size: 2vw;
+    font-size: 43px;
+    overflow: hidden;
+  }
+
+  .card:hover h2 {
+    top: 0;
+    transform: translateX(-50%) rotate(0deg) scale(40%);
+    transform-origin: center top;
   }
 
   .card-container {
     width: 100%;
+    height: 50%;
   }
 
   #myBtn {
@@ -662,5 +680,12 @@ footer {
     flex: 4;
     background-color: rgba(0, 0, 0, 0.7);
   }
- 
+
+  .linksBtn {
+    background-color: #20262E;
+    margin: 0px 5px;
+    height: 20px;
+    width: 60px;
+  }
+
 }
