@@ -319,84 +319,6 @@ section {
   transform: scale(0.95) rotateZ(10deg);
 }
 
-footer {
-  position: absolute;
-  width: 99%;
-  height: 2em;
-  text-align: center;
-  color: whitesmoke;
-  font-family: Arial, sans-serif
-}
-
-.card-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 75%;
-  height: 75%;
-}
-
-.card {
-  position: relative;
-  align-items: center;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  border: 2px solid;
-  border-radius: 3px;
-  border-image: linear-gradient(to bottom, #2c2d3b, #BDBDD7) 1;
-  margin: 0.1em;
-  transition: all 0.8s;
-  align-items: center;
-}
-
-.card:hover {
-  flex: 4;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.card h2 {
-  font-family: variera;
-  font-size: 3vw;
-  letter-spacing: 0.2em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-90deg);
-  transition: all 0.8s;
-  transform-origin: center center;
-  white-space: nowrap;
-  color: whitesmoke;
-}
-
-.card:hover h2 {
-  top: 0;
-  transform: translateX(-50%) rotate(0deg);
-  transform-origin: center top;
-}
-
-.languages {
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  top: 20%;
-}
-
-.languages img {
-  justify-content: center;
-  margin: 0px 5px;
-  display: flex;
-  height: 2.5vw;
-  color: whitesmoke;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  user-select: none;
-}
-
-.card:hover img {
-  animation: fade-in 2.5s 0.4s forwards;
-}
-
 .contactCard {
   width: 7vw;
   height: 2.5vw;
@@ -451,6 +373,75 @@ footer {
   transform: scale(0.95) rotateZ(1.7deg);
 }
 
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 75%;
+  height: 75%;
+}
+
+.card {
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  border: 2px solid;
+  border-radius: 3px;
+  border-image: linear-gradient(to bottom, #2c2d3b, #BDBDD7) 1;
+  margin: 0.1em;
+  transition: all 0.8s;
+  align-items: center;
+}
+
+.card:hover {
+  flex: 6;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card h2 {
+  font-family: variera;
+  font-size: 3vw;
+  letter-spacing: 0.2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  transition: all 0.8s;
+  transform-origin: center center;
+  white-space: nowrap;
+  color: whitesmoke;
+}
+
+.card:hover h2 {
+  top: 0;
+  transform: translateX(-50%) rotate(0deg);
+  transform-origin: center top;
+}
+
+.languages {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  top: 20%;
+}
+
+.languages img {
+  justify-content: center;
+  margin: 0px 5px;
+  display: flex;
+  height: 2.5vw;
+  color: whitesmoke;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  user-select: none;
+}
+
+.card:hover img {
+  animation: fade-in 2.5s 0.4s forwards;
+}
+
 .card p {
   color: whitesmoke;
   text-align: center;
@@ -501,6 +492,15 @@ footer {
 
 .linksBtn:active {
   transform: scale(0.95) rotateZ(1.7deg);
+}
+
+footer {
+  position: absolute;
+  width: 99%;
+  height: 2em;
+  text-align: center;
+  color: whitesmoke;
+  font-family: Arial, sans-serif
 }
 
 @keyframes fade-in {
@@ -582,7 +582,7 @@ footer {
   }
 
   .cardText p {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .mainMe .cardText {
@@ -644,7 +644,8 @@ footer {
   }
 
   .card p {
-    font-size: 15px;
+    user-select: none;
+    font-size: 12px;
     width: 90%;
     height: 50%;
     line-height: 100%;
@@ -652,19 +653,15 @@ footer {
   }
 
   .languages img {
+    user-select: none;
     height: 15px;
     overflow: hidden;
   }
 
   .card h2 {
-    font-size: 43px;
+    user-select: none;
+    font-size: 35px;
     overflow: hidden;
-  }
-
-  .card:hover h2 {
-    top: 0;
-    transform: translateX(-50%) rotate(0deg) scale(40%);
-    transform-origin: center top;
   }
 
   .card-container {
@@ -676,16 +673,21 @@ footer {
     font-size: 1em;
   }
 
-  .card:active {
-    flex: 4;
-    background-color: rgba(0, 0, 0, 0.7);
+  .card:active h2 {
+    top: 0;
+    transform: translateX(-50%) rotate(0deg) scale(0.7);
+    transform-origin: center top;
+  }
+  
+  .card:active p {
+    animation: fade-in 2.5s 0.6s forwards;
   }
 
   .linksBtn {
     background-color: #20262E;
     margin: 0px 5px;
     height: 20px;
-    width: 60px;
+    width: 90px;
   }
 
 }
