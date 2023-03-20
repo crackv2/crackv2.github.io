@@ -544,105 +544,123 @@ footer {
     background-color: rgba(0, 0, 0, 0.2);
   }
 
-  .mainMe:hover, .smallMe:hover, .smallMe2:hover {
-    transform: none;
+  .smallMe:hover,
+  .smallMe2:hover {
+    transform: translate(-50%);
     pointer-events: none;
-    background-color: transparent;
-  }
-  .smallMe:hover .cardText, .mainMe:hover .cardText, .smallMe2:hover .cardText {
-    transform: none;
-    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
+  .mainMe:hover {
+    transform: translate(-50%);
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 
-.mainMe {
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
+  .smallMe:hover .cardText,
+  .mainMe:hover .cardText,
+  .smallMe2:hover .cardText {
+    transform: none;
+    pointer-events: none;
+  }
 
-.smallMe {
-  transform: translate(-50%);
-  top: 7%;
-}
+  .mainMe {
+    right: 50%
+  }
 
-.smallMe2 {
-  width: 93%;
-  bottom: 10%;
-}
+  .smallMe {
+    top: 7%;
+  }
 
-.cardText h1 {
-  font-size: 100%;
-}
+  .smallMe2 {
+    width: 95%;
+    bottom: 10%;
+  }
 
-.cardText p {
-  font-size: 50%;
-}
+  .cardText h1 {
+    font-size: 100%;
+  }
 
-.mainMe .cardText{
-  font-size: 75%;
-}
+  .cardText p {
+    font-size: 50%;
+  }
 
-.smallMe2 .cardText{
-  height: 100%;
-  width: 100%;
-}
-.contactCard {
-  width: 20%;
-  height: 3.5em;
-  margin: 1em 1em;
-  font-size: 1.3vw;
-}
+  .mainMe .cardText {
+    font-size: 75%;
+  }
 
-.contactCard a {
-  font-size: 2em;
-}
+  .smallMe2 .cardText {
+    height: 100%;
+    width: 100%;
+  }
 
-.contactCard a img {
-  height: 1em;
-}
+  .contactCard {
+    width: 20%;
+    height: 3.5em;
+    margin: 1em 1em;
+    font-size: 1.3vw;
+  }
 
-#fb{
-  background-color: rgba(23, 120, 242, 0.7)
-}
+  .contactCard a {
+    font-size: 2em;
+  }
 
-#dc{
-  background-color: rgba(114, 137, 218, 0.7);
-}
+  .contactCard a img {
+    height: 1em;
+  }
 
-#gmail{
-  background-color: rgba(234, 67, 53, 0.7);
-}
+  #fb {
+    background-color: rgba(23, 120, 242, 0.7)
+  }
 
-#linkedIn{
-  background-color: rgba(2, 136, 209, 0.7);
-}
+  #dc {
+    background-color: rgba(114, 137, 218, 0.7);
+  }
 
-.contactCard:hover{
-  transform: none;
-  pointer-events: none;
-}
+  #gmail {
+    background-color: rgba(234, 67, 53, 0.7);
+  }
 
-#linkedIn:hover, #gmail:hover, #dc:hover, #fb:hover{
-  transform: none;
-  pointer-events: none;
-}
+  #linkedIn {
+    background-color: rgba(2, 136, 209, 0.7);
+  }
 
-.card p{
-  font-size: 1.2vw;
-}
+  .contactCard:hover {
+    transform: none;
+    pointer-events: none;
+  }
 
-.languages img{
-  height: 1.2vw;
-}
-.card h2{
-  font-size: 2vw;
-}
+  #linkedIn:hover,
+  #gmail:hover,
+  #dc:hover,
+  #fb:hover {
+    transform: none;
+    pointer-events: none;
+  }
 
-.card-container{ 
- width: 100%;
-}
+  .card p {
+    font-size: 1.2vw;
+  }
 
-#myBtn{
-  font-size: 1em;
-}
+  .languages img {
+    height: 2vw;
+  }
+
+  .card h2 {
+    font-size: 2vw;
+  }
+
+  .card-container {
+    width: 100%;
+  }
+
+  #myBtn {
+    font-size: 1em;
+  }
+
+  .card:active {
+    flex: 4;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+ 
 }
