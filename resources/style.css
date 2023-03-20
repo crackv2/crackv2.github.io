@@ -161,7 +161,9 @@ input[type="checkbox"]:checked+.checkmark+.options {
   color: #BDBDD7;
   text-shadow: 10px -2px 2px #1f1e1e;
   user-select: none;
+  animation: fade-in 5s forwards;
 }
+
 
 #message {
   position: absolute;
@@ -174,6 +176,7 @@ input[type="checkbox"]:checked+.checkmark+.options {
   font-size: 40px;
   text-shadow: 5px -2px 2px #1f1e1e;
   user-select: none;
+  animation: fade-in 5s forwards;
 }
 
 section {
@@ -429,9 +432,9 @@ section {
 
 .languages img {
   justify-content: center;
-  margin: 0px 5px;
+  margin: 5px 5px;
   display: flex;
-  height: 2.5vw;
+  height: 50px;
   color: whitesmoke;
   transform: translate(-50%, -50%);
   opacity: 0;
