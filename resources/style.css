@@ -24,6 +24,7 @@ html {
 
 body {
   background: #20262E;
+  min-height: 100vh;
 }
 
 header {
@@ -156,7 +157,7 @@ input[type="checkbox"]:checked+.checkmark+.options {
   transform: translate(-50%, -50%);
   text-align: center;
   font-family: 'venneta', sans-serif;
-  font-size: 85px;
+  font-size: 500%;
   color: #BDBDD7;
   text-shadow: 10px -2px 2px #1f1e1e;
   user-select: none;
@@ -230,7 +231,6 @@ section {
   padding: 10px;
   font-size: 1em;
   background-color: rgba(0, 0, 0, 0.2)
-  
 }
 
 .smallMe {
@@ -287,7 +287,7 @@ section {
 }
 
 .cardText a {
-  color: #BDBDD7;
+  color: #8e8eaa;
   text-decoration: none;
   font-weight: bold;
 }
@@ -332,8 +332,8 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 75vw;
-  height: 40vw;
+  width: 75%;
+  height: 75%;
 }
 
 .card {
@@ -523,4 +523,126 @@ footer {
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+
+@media (max-width: 900px) {
+  body {
+    height: 100vh;
+  }
+
+  .mainMe,
+  .smallMe,
+  .smallMe2 {
+    height: 25%;
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    animation: none;
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .mainMe:hover, .smallMe:hover, .smallMe2:hover {
+    transform: none;
+    pointer-events: none;
+    background-color: transparent;
+  }
+  .smallMe:hover .cardText, .mainMe:hover .cardText, .smallMe2:hover .cardText {
+    transform: none;
+    pointer-events: none;
+  }
+
+
+.mainMe {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.smallMe {
+  transform: translate(-50%);
+  top: 7%;
+}
+
+.smallMe2 {
+  width: 93%;
+  bottom: 10%;
+}
+
+.cardText h1 {
+  font-size: 100%;
+}
+
+.cardText p {
+  font-size: 50%;
+}
+
+.mainMe .cardText{
+  font-size: 75%;
+}
+
+.smallMe2 .cardText{
+  height: 100%;
+  width: 100%;
+}
+.contactCard {
+  width: 20%;
+  height: 3.5em;
+  margin: 1em 1em;
+  font-size: 1.3vw;
+}
+
+.contactCard a {
+  font-size: 2em;
+}
+
+.contactCard a img {
+  height: 1em;
+}
+
+#fb{
+  background-color: rgba(23, 120, 242, 0.7)
+}
+
+#dc{
+  background-color: rgba(114, 137, 218, 0.7);
+}
+
+#gmail{
+  background-color: rgba(234, 67, 53, 0.7);
+}
+
+#linkedIn{
+  background-color: rgba(2, 136, 209, 0.7);
+}
+
+.contactCard:hover{
+  transform: none;
+  pointer-events: none;
+}
+
+#linkedIn:hover, #gmail:hover, #dc:hover, #fb:hover{
+  transform: none;
+  pointer-events: none;
+}
+
+.card p{
+  font-size: 1.2vw;
+}
+
+.languages img{
+  height: 1.2vw;
+}
+.card h2{
+  font-size: 2vw;
+}
+
+.card-container{ 
+ width: 100%;
+}
+
+#myBtn{
+  font-size: 1em;
+}
 }
